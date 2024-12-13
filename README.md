@@ -4,6 +4,10 @@ This repository contains a React Native application for managing Bluetooth Low E
 
 ---
 
+### Demo Video
+
+![Video Result](screenshot/video_result.mp4)
+
 ## How to Use the App
 
 ### 1. Clone the Repository
