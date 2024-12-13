@@ -1,79 +1,90 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Here’s the complete `README.md` content in Markdown format:
 
-# Getting Started
+````markdown
+# React Native Bluetooth Low Energy App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This repository contains a React Native application for managing Bluetooth Low Energy (BLE) devices. It allows scanning, connecting, and interacting with BLE devices on Android.
 
-## Step 1: Start the Metro Server
+---
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## How to Use the App
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### 1. Clone the Repository
 
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+Clone the app to your local machine:
 
 ```bash
-# using npm
-npm run android
+git clone https://github.com/imammuhtadi/react-native-bluetooth-low-energy
+cd react-native-bluetooth-low-energy
+```
+````
 
-# OR using Yarn
-yarn android
+### 2. Add Required Permissions
+
+Ensure the following permissions are added to your `AndroidManifest.xml` file for Bluetooth functionality:
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
 ```
 
-### For iOS
+### 3. Install Dependencies
+
+Run the following command to install all required dependencies:
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+npm install
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+### 4. Run the App
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+To start the application on an Android device or emulator, use:
 
-## Step 3: Modifying your App
+```bash
+npx react-native run-android
+```
 
-Now that you have successfully run the app, let's modify it.
+---
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Using the Features in Your Project
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+If you only want to use the BLE features in your own project, you can copy the files from the `/src` folder into your project. Simply call the components or methods as needed.
 
-## Congratulations! :tada:
+### Example:
 
-You've successfully run and modified your React Native App. :partying_face:
+```javascript
+import BLEComponent from './src/components/BLEComponent';
 
-### Now what?
+const App = () => {
+  return <BLEComponent />;
+};
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+export default App;
+```
 
-# Troubleshooting
+---
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Folder Structure
 
-# Learn More
+```
+react-native-bluetooth-low-energy/
+├── src/               # Core functionality for BLE interactions
+│   ├── components/    # Reusable React components
+│   ├── services/      # Business logic for BLE
+│   ├── utils/         # Utility functions
+├── android/           # Android native configuration
+├── ios/               # iOS native configuration
+├── package.json       # Project metadata
+├── README.md          # Documentation
+```
 
-To learn more about React Native, take a look at the following resources:
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+```
+
+You can copy this entire content into your `README.md` file. Let me know if there’s anything else you’d like to include!
+```
