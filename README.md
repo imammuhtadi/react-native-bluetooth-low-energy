@@ -1,6 +1,3 @@
-Here’s the complete `README.md` content in Markdown format:
-
-````markdown
 # React Native Bluetooth Low Energy App
 
 This repository contains a React Native application for managing Bluetooth Low Energy (BLE) devices. It allows scanning, connecting, and interacting with BLE devices on Android.
@@ -17,7 +14,6 @@ Clone the app to your local machine:
 git clone https://github.com/imammuhtadi/react-native-bluetooth-low-energy
 cd react-native-bluetooth-low-energy
 ```
-````
 
 ### 2. Add Required Permissions
 
@@ -79,12 +75,3 @@ react-native-bluetooth-low-energy/
 ```
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-```
-
-You can copy this entire content into your `README.md` file. Let me know if there’s anything else you’d like to include!
-```
