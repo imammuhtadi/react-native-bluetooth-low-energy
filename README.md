@@ -2,11 +2,15 @@
 
 This repository contains a React Native application for managing Bluetooth Low Energy (BLE) devices. It allows scanning, connecting, and interacting with BLE devices on Android.
 
+
+
+
 ---
 
 ### Demo Video
 
-![Video Result](screenshot/video_result.mp4)
+[![Video Result](screenshot/video_result.mp4)](https://github.com/user-attachments/assets/0d154804-429e-4ae0-bad8-5eeaad2ffc51)
+
 
 ## How to Use the App
 
