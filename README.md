@@ -70,8 +70,8 @@ export default App;
 react-native-bluetooth-low-energy/
 ├── src/               # Core functionality for BLE interactions
 │   ├── components/    # Reusable React components
+│   ├── models/        # Entities for BLE
 │   ├── services/      # Business logic for BLE
-│   ├── utils/         # Utility functions
 ├── android/           # Android native configuration
 ├── ios/               # iOS native configuration
 ├── package.json       # Project metadata
